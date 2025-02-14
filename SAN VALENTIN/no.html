@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/x-icon" href="../SAN VALENTIN/Imagenes/panda.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Seguro? :(</title>
+    <link rel="stylesheet" href="..//SAN VALENTIN/CSS/styles.css">
+    <script>
+        const frases = [
+            "¿Cómo que no? :( ",
+            "Piénsalo otra vez 🥺",
+            "¿Estás segura? 💔",
+            "No me hagas esto :(",
+            "Vamos, di que sí 🥰",
+            "Si dices que sí, te daré muchos abrazos y besitos 🐼💕"
+        ];
+        function cambiarMensaje() {
+            const index = Math.floor(Math.random() * frases.length);
+            document.getElementById("mensaje").innerText = frases[index];
+        }
+    </script>
+</head>
+<body class="no-fondo" onload="cambiarMensaje()">
+    <div class="container">
+        <h1 id="mensaje" class="triste"></h1>
+        <img src="..//SAN VALENTIN/Imagenes/img6.jpg" alt="Panda triste" class="panda-triste">
+        <div class="buttons">
+            <a href="si.html" class="btn">Ok, Sí 💖</a>
+            <button class="btn no-btn" onclick="cambiarMensaje()">No 😢</button>
+        </div>
+    </div>
+</body>
+</
